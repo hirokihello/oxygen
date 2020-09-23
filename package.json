@@ -1,0 +1,27 @@
+{
+  "name": "oxygen",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+ssh://git@github.com/hirokihello/oxygen.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/hirokihello/oxygen/issues"
+  },
+  "homepage": "https://github.com/hirokihello/oxygen#readme",
+  "dependencies": {
+    "@hirokihello/hydrogen": "^1.0.7",
+    "invariant": "^2.2.4"
+  },
+  "devDependencies": {
+    "@types/node": "^14.11.1"
+  }
+}
