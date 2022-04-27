@@ -16,7 +16,7 @@ export class Store {
     return this._state;
   }
 
-  _onDispatched(payload) {
+  _onDispatched(payload: any) {
     const startingState = this._state;
     const endingState = this._reducer(startingState, payload);
 
