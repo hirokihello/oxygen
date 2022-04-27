@@ -7,7 +7,6 @@ function Provider({
   store,
   children,
 }: { store: any, children: any}) {
-  console.log(store)
   const context = {
     store: useSyncExternalStore(store.store.subscribe, store.store.getState, store.store.getState),
     dispatcher: store.store._dispatcher
