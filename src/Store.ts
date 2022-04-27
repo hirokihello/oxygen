@@ -2,7 +2,7 @@ export class Store {
   _reducer: (old_state: any, payload: any) => any;
   _state: any;
 
-  constructor(properties: any) {
+  constructor(properties: { reducer: any, initial_state: any, dispatcher: any }) {
     this._reducer = properties.reducer;
     this._state = properties.initial_state;
     properties.dispatcher.register((payload: any) => this._onDispatched(payload));
