@@ -5,7 +5,7 @@ import {
 
 export function createDispatchHook() {
   return function useDispatch() {
-    const { dispatcher } = useContext<any>(ReactReduxContext)!
+    const {dispatcher} = useContext<any>(ReactReduxContext)!
     return dispatcher;
   }
 }

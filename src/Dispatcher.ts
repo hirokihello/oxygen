@@ -16,6 +16,7 @@ export class Dispatcher {
   // { action_name: string, ...args }
   dispatch(payload: any) {
     // 登録された全てのcallbackを実行する
+
     for(let id in this._store_callbacks) {
       this._store_callbacks[id](payload);
     }

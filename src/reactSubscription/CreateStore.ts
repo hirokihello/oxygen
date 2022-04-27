@@ -9,6 +9,5 @@ export const create_store = ({reducer, initial_state}: any) => {
     initial_state
   }
   const store = new Store(store_payload);
-
-  return { store, dispatcher };
+  return { store };
 }
